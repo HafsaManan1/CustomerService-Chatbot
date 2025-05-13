@@ -1,0 +1,11 @@
+FROM ./unsloth.Q4_K_M.gguf
+
+# System instructions to restrict responses to banking queries only
+SYSTEM """
+You are a banking assistant. You only answer queries related to banking. 
+If a question is outside the banking domain, politely refuse to answer.
+
+"""
+
+PARAMETER temperature 0.1
+PARAMETER min_p 0.1
