@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema import HumanMessage, AIMessage
 import streamlit as st
 
-llm = ChatOllama(model="chatbot2.0", streaming=True, temperature=0)
+llm = ChatOllama(model="hafsamanan/chatbot2.0", streaming=True, temperature=0)
 
 prompt = ChatPromptTemplate.from_messages([
     MessagesPlaceholder(variable_name="history"),

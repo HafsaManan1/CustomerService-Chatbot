@@ -44,7 +44,7 @@ CustomerService-Chatbot/
 
 ## Prerequisites
 - Python 3.12.4
-- Ollama
+- Ollama 0.6.1 or above
 
 ## Installation & Setup
 
@@ -74,7 +74,7 @@ cd CustomerService-Chatbot
 
 ### 5. Create Ollama custom model
 
-    ollama create chatbot2.0 -f chatbot-gguff/Modelfile
+    ollama pull hafsamanan/chatbot2.0
 
 ### 6. Run Streamlit Chatbot
 
