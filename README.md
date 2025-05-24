@@ -15,12 +15,6 @@ This repository contains a **Customer Service Chatbot** powered by a **LoRA fine
 ## Directory Structure
 ```
 CustomerService-Chatbot/  
-
-├── chatbot-gguff/  
-│   │
-│   ├── Modelfile                                                           # Definition file used by Ollama to create the custom model
-│   │   
-│   └── unsloth.Q4_K_M.gguf                                                 # The quantized GGUF model file containing the weights for the fine-tuned model
 │
 ├── chatbot.py                                                              # Streamlit app to run the chatbot    
 │
@@ -72,7 +66,7 @@ cd CustomerService-Chatbot
 
     pip install -r requirements.txt
 
-### 5. Create Ollama custom model
+### 5. Pull Ollama custom model
 
     ollama pull hafsamanan/chatbot2.0
 
